@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/geral.css">
+    <script src="../app.js" defer></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+    <title>Portfólio - Andressa L. de Lima</title>
+</head>
+<body>
+    <header>
+       <h1 id="header_titulo">Andressa Lima</h1>
+       <nav id="nav">
+        <button aria-label="Abrir Menu" id="btn-mobile" aria-expanded="false" aria-haspopup="true" aria-controls="menu">
+            <span id="hamburguer"></span>
+        </button>
+        <ul id="menu" role="menu">
+            <li><a href="#sobre_titulo" id="menu_tres">Sobre</a></li>
+            <li><a href="#projetos_titulo" id="menu_um">Projetos</a></li>
+            <li><a href="" id="menu_dois">Contato</a></li>
+        </ul>
+    </nav>
+    </header>
+    <main>
+        <h2 id="sobre_titulo">Sobre</h2>
+        <div id="sobre">
+        <img src="./images/foto.jpg" alt="" id="sobre_foto">
+        <p id="sobre_texto">Meu nome é Andressa Laurentino de Lima, e tenho 18 anos. Eu sou completamente apaixonada por programação, conheci esse mundo pela {reprograma}, uma iniciativa de impacto social que visa ensinar programação para mulheres cis e trans que não possuem muita presença nessa área. Fiz dois cursos oferecidos pela iniciativa: o Conectadas patrocinado pelo Mercado Livre, que ensina a identificar e solucionar problemas, e o reprograma Teens, focado em ensinar Front-End em seis semanas. Tenho conhecimento em HTML, CSS e JavaScript, acredito que posso aprofundar esse conhecimento pondo em prática diariamente junto à profissionais da programação. 
+        <br>
+        <br>
+        Atualmente fui aceita em um curso de programação e inglês com duração de um ano, o Programadores do Amanhã, e sempre busco aprender mais por mim mesma.</p>
+        </div>
+        <div id="redes">
+          <a href="https://github.com/garotaonline"><img src="./images/github.png" alt="" target="_blank" id="github"></a>
+          <a href="https://www.linkedin.com/in/andressa-laurentino-de-lima" target="_blank"><img src="./images/linkedin.png" alt=""></a>
+          <a href="https://www.instagram.com/garotaaonlinee/" target="_blank"><img src="./images/instagram.png" alt=""></a>
+        </div>
+    </main>
+    <section>
+      <div id="projetos">
+        <h2 id="projetos_titulo">Projetos</h2>
+          <div class="d-flex justify-content-center">
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title">M de Maravilhosas</h5>
+              <h6 class="card-subtitle mb-2 text-muted">Aelin Ashryver
+                Galathynius</h6>
+              <p class="card-text">Projeto criado no curso {reprograma} Teens.</p>
+              <a href="https://github.com/garotaonline/projetofinal-mmaravilhosas" class="card-link" style=" color: white;" target="_blank">Confira!</a>
+            </div>
+          </div>
+        </div>
+        <div class="d-flex justify-content-center">
+          <div class="card" style="width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title">Compras</h5>
+              <h6 class="card-subtitle mb-2 text-muted">MercadoDH</h6>
+              <p class="card-text">Carrinho de compras sendo desenvolvido.</p>
+              <a href="https://github.com/garotaonline/MercadoDH" class="card-link" style=" color: white;" target="_blank">Confira!</a>
+            </div>
+          </div>
+        </div>
+          <div class="d-flex justify-content-center">
+          <div class="card" style="width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title">Loja Magica</h5>
+              <h6 class="card-subtitle mb-2 text-muted">Tarot's</h6>
+              <p class="card-text">Projeto criado no curso {reprograma} Teens.</p>
+              <a href="https://github.com/garotaonline/LojaMagica" class="card-link" style=" color: white;" target="_blank">Confira!</a>
+            </div>
+          </div>
+        </div>
+        </div>
+    </section>
+    <footer>
+        <p>Creative Commons 2022 | Feito com muito carinho e amor por Andressa Lima</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+</body>
+</html>

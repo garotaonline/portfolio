@@ -1,0 +1,161 @@
+body, ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+header {
+    background-color: #195566;
+    padding: 15px;
+    align-items: center;
+    font-family: 'Send Flowers', cursive;
+    font-family: 'Wellfleet', cursive;
+}
+
+#header_titulo {
+    font-family: 'Cinzel';
+    font-size: xx-large;
+    color: #ffffff;
+    font-weight: bolder;
+    margin-top: 15px;
+    margin-left: 30px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    font-size: 30px;
+    padding: 25px;
+}
+
+#btn-mobile {
+    display: flex;
+    padding: .5rem .1rem;
+    font-size: 1rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+#hamburguer {
+    color: white;
+    display: block;
+    width: 20px;
+    border-top: 2px solid;
+}
+
+#hamburguer::before, #hamburguer::after {
+    width: 20px;
+    height: 2px;
+    content: "";
+    display: block;
+    margin-top: 5px;
+    background: currentColor;
+    transition: .3s;
+    position: relative;
+}
+
+#nav.active #hamburguer {
+    border-top-color: transparent;
+}
+
+#nav.active #hamburguer::before {
+    transform: rotate(135deg);
+}
+
+#nav.active #hamburguer::after {
+    transform: rotate(-135deg);
+    top: -7px;
+}
+
+#nav.active #menu {
+    display: inline;
+    gap: .5rem;
+    text-align: center;
+    padding: 1rem 0;
+    position: absolute;
+    height: 20vh;
+    width: 100%;
+    right: 0;
+    background-color: #195566;
+    display: block;
+    z-index: 1000;
+    visibility: visible;
+    overflow-y: auto;
+}
+
+#menu {
+    display: block;
+    gap: .5rem;
+    height: 0;
+    transition: .6s;
+    visibility: hidden;
+    overflow-y: hidden;
+}
+
+#menu a {
+    padding: 1rem 0;
+    margin: 0 1rem;
+    display: block;
+    padding: .5rem;
+    border-bottom: 2px solid #0a404f;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+#menu a:hover {
+    background: #0a404f;
+    color: white;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+
+@media (min-width: 600px) {
+    #btn-mobile {
+        display: none;
+    }
+
+    nav ul {
+        display: flex;
+        gap: .5rem;
+    }
+
+    #menu {
+        display: flex;
+        height: auto;
+    }
+
+    #menu a {
+        border: none;
+        visibility: visible;
+        overflow-y: visible;
+    }
+
+    #header_titulo {
+        font-size: 60px;
+        margin-left: 60px;
+    }
+
+}
+
+@media (min-width: 1300px) {
+    #header_titulo {
+        font-size: 55px;
+    }
+    
+}
+
+@media (min-width: 1300px) {
+
+    #header_titulo {
+        font-size: 80px;
+        padding: 40px;
+    }
+
+    #menu a {
+        font-size: 20px;
+    }
+
+}

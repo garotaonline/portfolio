@@ -1,0 +1,141 @@
+body {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+main {
+    margin: 20px;
+    align-items: center;
+}
+
+#sobre_titulo {
+    padding-top: 25px;
+    text-transform: uppercase;
+    color: #195566;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#sobre_foto {
+    max-width: 80vw;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+#sobre_texto {
+    text-align: justify;
+    font-size: 25px;
+    padding: 25px 20px 20px;
+}
+
+#redes img {
+    max-width: 80px;
+}
+
+#redes {
+    display: flex;
+    justify-content: space-around;
+}
+
+#projetos_titulo {
+    padding-top: 25px;
+    text-transform: uppercase;
+    color: #195566;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 15px;
+    padding-bottom: 25px;
+}
+
+#projetos {
+    background-color: #06a1bb;
+    padding: 20px;
+}
+
+section .card {
+    background-color: #195566;
+    color: white;
+    margin-bottom: 25px;
+}
+
+footer {
+    background-color: #195566;
+    margin: 0;
+    padding: 20px;
+    align-items: center;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+@media (min-width: 700px) {
+    
+    #sobre_titulo {
+        font-size: 45px;
+    }
+    
+    #sobre_foto {
+        max-width: 350px;
+    }
+
+    #sobre_texto {
+        padding: 10px 45px;
+        font-size: 30px;
+    }
+
+    #projetos_titulo {
+        font-size: 45px;
+    }
+
+}
+
+@media (min-width: 1300px) {
+    #sobre_titulo {
+        font-size: 60px;
+    }
+
+    #sobre {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 20px 35px;
+    }
+
+    #sobre_foto {
+        max-width: 500px;
+        padding-right: 15px;
+        margin-bottom: 0px;
+    }
+
+    #sobre_texto {
+        padding-left: 60px;
+        padding-right: 25px;
+        font-size: 30px;
+    }
+
+    #redes img {
+        margin-top: 0px;
+        max-width: 80px;
+        margin-left: 70px;
+        margin-bottom: 40px;
+    }
+    
+    #redes {
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    #projetos_titulo {
+        font-size: 60px;
+    }
+
+
+}
