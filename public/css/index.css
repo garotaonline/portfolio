@@ -54,9 +54,16 @@ main {
     padding-bottom: 25px;
 }
 
-#projetos {
+.projects{
     background-color: #06a1bb;
     padding: 20px;
+}
+
+.projects-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 section .card {
@@ -95,6 +102,15 @@ footer {
         font-size: 45px;
     }
 
+}
+
+@media (min-width: 940px) {
+    .projects-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+    }
 }
 
 @media (min-width: 1300px) {
